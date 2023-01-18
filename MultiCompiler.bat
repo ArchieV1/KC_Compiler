@@ -32,7 +32,7 @@ FOR /R %%mod IN %mod_names% DO (
   SET root_dir=%wip_dir% AND %mod%
   SET target_dir=%kc_mod_dir% AND %mod%
   
-  FOR /R "%root_dir%" %%f IN (*.cs) DO COPY %%f "%target_dir%"
+  FOR /R "%root_dir%" %%f IN (*.cs) DO COPY "%%f" "%target_dir%"
 )
 
 :: Launch KaC
