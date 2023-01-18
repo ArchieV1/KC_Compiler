@@ -19,7 +19,7 @@ CD /D %kc-appdata-directory%
 DEL output_log.txt
 
 :: Copy files from WIP folder to KC mod folder so that KC can compile it
-FOR /R "%wip-mod-directory%" %%f IN (*.cs) DO COPY %%f "%kc-mod-directory%"
+FOR /R "%wip-mod-directory%" %%f IN (*.cs) DO COPY "%%f" "%kc-mod-directory%"
 
 :: Launch KC
 :: Will launch even if steam has not been opened
