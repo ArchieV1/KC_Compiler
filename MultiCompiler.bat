@@ -16,7 +16,7 @@ ECHO ==================Starting "compiler"==================
 
 :: Go to KC gamedata folder and delete game log
 CD /D %kc_appdata_dir%
-DEL output_log.txt
+DEL Player.log
 
 :: For each mod
 FOR /R %%mod IN %mod_names% DO (
