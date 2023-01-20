@@ -16,7 +16,7 @@ DEL output.txt
 :: Go to KC gamedata folder and delete log
 :: This is the log that 
 CD /D %kc-appdata-directory%
-DEL output_log.txt
+DEL Player.log
 
 :: Copy files from WIP folder to KC mod folder so that KC can compile it
 FOR /R "%wip-mod-directory%" %%f IN (*.cs) DO COPY "%%f" "%kc-mod-directory%"
